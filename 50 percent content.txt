@@ -1,0 +1,7 @@
+
+On the frontend an Admin user can create another user, can assign clients to that user. 
+Admin user also can create role, User can Add New Article, User can create survey and add question to that survey.
+Also user can create a New Client
+This will be connected with backend.
+
+okay then I can show update again tuesday with client details, client employees, email management and survey management completing this part

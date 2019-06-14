@@ -1,0 +1,14 @@
+<nb-card>
+  <nb-card-header>
+    <nb-card-body>
+      Survey Management
+      <button class="btn btn-success btn-xs" (click)="onAddConfirm()">Add Survey</button>
+    </nb-card-body>
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="source" (delete)="onDeleteConfirm($event)"
+                     (edit)="onEditConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

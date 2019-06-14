@@ -1,0 +1,109 @@
+<div class="row">
+  <div class="col-lg-12">
+    <nb-card>
+      <nb-card-header>Add Products</nb-card-header>
+      <nb-card-body>
+
+        <div class="row full-name-inputs">
+          <div class="col-md-6 col-sm-12 input-group">
+            <input type="text" nbInput fullWidth placeholder="Page Title *">
+          </div>
+
+          <div class="col-md-6 col-sm-12 input-group">
+            <input type="text" nbInput fullWidth placeholder="Menu Title *">
+          </div>
+        </div>
+
+        <div class="row full-name-inputs">
+          <div class="col-md-6 col-sm-12 input-group">
+            <input type="text" nbInput fullWidth placeholder="Page Text *">
+          </div>
+
+          <div class="col-md-6 col-sm-12 input-group">
+            <input type="text" nbInput fullWidth placeholder="Homepage Extract *">
+            <!--<ngx-ckeditor></ngx-ckeditor>-->
+          </div>
+        </div>
+
+        <!--<div class="col-md-6 col-sm-12 input-group">-->
+        <!--<input type="text" nbInput fullWidth placeholder="Homepage Extract *">-->
+
+        <!--</div>-->
+
+        <div class="form-group row">
+          <div class="col-sm-9">
+            <label class="col-sm-12 col-lg-12" style="color: white">Homepage Display</label>
+            <div class="form-check">
+              <label class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="gridRadios" checked>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description" style="padding-left: 2.25rem; color: white">Yes</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="gridRadios">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description" style="padding-left: 2.25rem
+">No</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Call-out Box 1 *</label>
+              <div class="dropdown" ngbDropdown>
+                <button class="btn btn-primary" type="button" ngbDropdownToggle>
+                  {{ position }}
+                </button>
+                <ul ngbDropdownMenu class="dropdown-menu">
+                  <li class="dropdown-item" *ngFor="let p of positions" (click)="position = p">
+                    {{ p }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Call-out Box 2 *</label>
+              <div class="dropdown" ngbDropdown>
+                <button class="btn btn-primary" type="button" ngbDropdownToggle>
+                  {{ position }}
+                </button>
+                <ul ngbDropdownMenu class="dropdown-menu">
+                  <li class="dropdown-item" *ngFor="let p of positions" (click)="position = p">
+                    {{ p }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="row">-->
+          <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label">Call-out Box 3 *</label>
+              <div class="dropdown" ngbDropdown>
+                <button class="btn btn-primary" type="button" ngbDropdownToggle>
+                  {{ position }}
+                </button>
+                <ul ngbDropdownMenu class="dropdown-menu">
+                  <li class="dropdown-item" *ngFor="let p of positions" (click)="position = p">
+                    {{ p }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
